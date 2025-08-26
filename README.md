@@ -1,5 +1,6 @@
-# Led-control-using-Arduino
-
+## NAME: SHARAN S
+## REG NO: 212224040309 
+## EXP 1: LED control using Arduino and Push button
 ## AIM
 To design and implement a system for LED control using an Arduino microcontroller and a push button.
 
@@ -58,9 +59,39 @@ Emergency Signaling System </br>
 Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
+<img width="1658" height="1159" alt="Screenshot 2025-08-21 090950" src="https://github.com/user-attachments/assets/f30b1bf8-2ba2-402c-9ee1-1691259eda8a" />
+
 
 ## PROGRAM
+```
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(13,OUTPUT);
+  pinMode(2,INPUT);
+}
 
+void loop() {
+  // put your main code here, to run repeatedly:
+  int status=digitalRead(2);
+  if(status==HIGH)
+    {digitalWrite(13,HIGH);
+      delay(500);
+      digitalWrite(13,LOW);
+      delay(500);
+  }
+    else{
+      digitalWrite(13,LOW);
+    }
+  }
+```
 ## OUTPUT
+## LED OFF
+<img width="1937" height="1354" alt="Screenshot 2025-08-21 091651" src="https://github.com/user-attachments/assets/c7a7c3a2-6979-4bca-a004-8054fe26e9c0" />
+
+## LED ON
+<img width="1947" height="1352" alt="Screenshot 2025-08-21 091632" src="https://github.com/user-attachments/assets/7f55fae2-8542-4842-88cf-1c2be3a597dd" />
+
+
 
 ## RESULT
+Successfully Designed and implemented a system for LED control using an Arduino microcontroller and a push button by using proteus.
